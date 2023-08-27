@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #2a2a72;
+  background-color: #9193ec;
   color: #fff;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -25,10 +25,10 @@ body {
 .user-form input {
   width: 100%;
   display: block;
-  background-color: #4c2885;
+  background-color: #d1d8da;
   border: none;
   border-radius: 10px;
-  color: #fff;
+  color: black;
   padding: 1rem;
   margin-bottom: 2rem;
   font-family: inherit;
@@ -42,7 +42,7 @@ body {
 }
 
 .user-form input::placeholder {
-  color: #bbb;
+  color: #c75353;
 }
 
 .card {
@@ -58,7 +58,7 @@ body {
 
 .avatar {
   border-radius: 50%;
-  border: 10px solid #2a2a72;
+  border: 10px solid #df9139;
   height: 150px;
   width: 150px;
 }
@@ -114,4 +114,26 @@ body {
   .user-info {
     margin-left: 0;
   }
+}
+
+/* Style for the creator info section */
+.creator-info {
+  display: none;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.creator-info.show {
+  display: block;
+}
+
+/* Style for the toggle button */
+.toggle-button {
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }

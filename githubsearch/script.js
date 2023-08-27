@@ -78,3 +78,22 @@ form.addEventListener("submit", (e) => {
     search.value = "";
   }
 });
+
+// Get the creator info section
+const creatorInfo = document.querySelector('.creator-info');
+
+// Get the button to show/hide creator info
+const toggleButton = document.createElement('button');
+toggleButton.textContent = 'Show Creator Info';
+toggleButton.classList.add('toggle-button');
+document.body.insertBefore(toggleButton, creatorInfo);
+
+// Toggle creator info visibility
+toggleButton.addEventListener('click', () => {
+  creatorInfo.classList.toggle('show');
+  if (creatorInfo.classList.contains('show')) {
+    toggleButton.textContent = 'Hide Creator Info';
+  } else {
+    toggleButton.textContent = 'Show Creator Info';
+  }
+});
